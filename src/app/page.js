@@ -20,7 +20,7 @@ export default function Home() {
         throw new Error("Invalid JSON: Missing 'data' field.");
       }
 
-      const response = await fetch('http://localhost:4000/bfhl', {
+      const response = await fetch('https://bajajserver.vercel.app/bfhl', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
